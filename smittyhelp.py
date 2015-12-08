@@ -36,6 +36,6 @@ if __name__ == '__main__':
 
     if method not in ('encode', 'decode'):
         print("nope")
-    else:
-        for line_out in convert_emails(arguments['<file>'], method):
-            print(line_out)
+    exit(1)
+    for line_out in convert_emails(arguments['<file>'], method):
+        print(line_out)
